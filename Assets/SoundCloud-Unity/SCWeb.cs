@@ -121,7 +121,7 @@ public class SCWeb : MonoBehaviour
 
         if (string.IsNullOrEmpty(response.error))
         {
-            clip = response.audioClip;
+            clip = response.GetAudioClip();
         }
 
         if (callback != null)
